@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rolled and Ready (一碗手擀面) - Premium handcrafted Chinese noodles, fresh ingredients, authentic spicy braised duck, and traditional cold dishes in Toronto.">
+  <meta name="keywords" content="Chinese Noodles, Hand-rolled Noodles, Hand-pulled Noodles, Toronto Chinese Food, Scarborough Restaurant, Rolled & Ready, 一碗手擀面">
+  <title>Rolled and Ready | 一碗手擀面 - Handcrafted Chinese Noodles</title>
+  
+  <!-- Preconnect and Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;700&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for elegance -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Premium Sticky Header -->
+  <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      
+      <!-- Brand Logo / Name -->
+      <a href="#" class="flex flex-col logo-container">
+        <span class="brand-zh font-serif text-2xl font-bold tracking-wider text-gold">一碗手擀面</span>
+        <span class="brand-en font-serif text-xs font-semibold uppercase tracking-widest text-cream">Rolled & Ready</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center space-x-8 font-sans text-sm font-medium tracking-wide">
+        <a href="#hero" class="nav-link">
+          <span class="lang-en">Home</span>
+          <span class="lang-zh">首页</span>
+        </a>
+        <a href="#craft" class="nav-link">
+          <span class="lang-en">The Craft</span>
+          <span class="lang-zh">面馆匠心</span>
+        </a>
+        <a href="#menu" class="nav-link">
+          <span class="lang-en">Menu</span>
+          <span class="lang-zh">经典菜单</span>
+        </a>
+        <a href="#reservation" class="nav-link">
+          <span class="lang-en">Reservations</span>
+          <span class="lang-zh">客座预订</span>
+        </a>
+        <a href="#contact" class="nav-link">
+          <span class="lang-en">Connect</span>
+          <span class="lang-zh">联系我们</span>
+        </a>
+      </nav>
+
+      <!-- Right Actions: Language Switch & CTA -->
+      <div class="flex items-center space-x-4">
+        <!-- Elegant Language Toggle -->
+        <button id="lang-switch" class="btn-lang font-sans font-semibold text-xs tracking-wider" aria-label="Toggle language">
+          <span class="lang-en">Mandarin / 中文</span>
+          <span class="lang-zh">English / EN</span>
+        </button>
+        
+        <!-- Booking CTA -->
+        <a href="#reservation" class="btn btn-gold hidden sm:inline-block">
+          <span class="lang-en">Book Table</span>
+          <span class="lang-zh">即刻预订</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-toggle" class="md:hidden text-cream focus:outline-none" aria-label="Toggle menu">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation Menu -->
+  <div id="mobile-nav" class="fixed inset-0 w-full h-full z-40 bg-dark-jade bg-opacity-98 flex flex-col justify-center items-center space-y-8 font-serif text-2xl tracking-wide opacity-0 invisible transition-all duration-300">
+    <a href="#hero" class="mobile-nav-link">
+      <span class="lang-en">Home</span>
+      <span class="lang-zh">首页</span>
+    </a>
+    <a href="#craft" class="mobile-nav-link">
+      <span class="lang-en">The Craft</span>
+      <span class="lang-zh">面馆匠心</span>
+    </a>
+    <a href="#menu" class="mobile-nav-link">
+      <span class="lang-en">Menu</span>
+      <span class="lang-zh">经典菜单</span>
+    </a>
+    <a href="#reservation" class="mobile-nav-link">
+      <span class="lang-en">Reservations</span>
+      <span class="lang-zh">客座预订</span>
+    </a>
+    <a href="#contact" class="mobile-nav-link">
+      <span class="lang-en">Connect</span>
+      <span class="lang-zh">联系我们</span>
+    </a>
+    
+    <a href="#reservation" class="btn btn-gold py-3 px-8 text-base">
+      <span class="lang-en">Book Table</span>
+      <span class="lang-zh">即刻预订</span>
+    </a>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <!-- High-Quality Hero Background with Jade overlay -->
+      <div class="absolute inset-0 bg-gradient-to-r from-dark-jade via-dark-jade-90 to-transparent z-10"></div>
+      <img src="assets/hero_noodle.png" alt="Steaming bowl of hand-rolled beef noodles" class="w-full h-full object-cover object-center scale-102 filter brightness-85">
+    </div>
+
+    <div class="relative z-20 max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      
+      <!-- Hero Text Content -->
+      <div class="hero-text-content space-y-6 animate-fade-in-up">
+        
+        <!-- Classic Crest / Subtitle -->
+        <div class="flex items-center space-x-3 text-gold">
+          <span class="h-px w-8 bg-gold"></span>
+          <span class="font-sans font-semibold text-xs uppercase tracking-widest">
+            <span class="lang-en">Traditional Wheat Noodle House</span>
+            <span class="lang-zh">匠心传承 · 纯手工手擀面</span>
+          </span>
+        </div>
+
+        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-cream">
+          <span class="lang-en">Hand-Rolled,<br><span class="text-gold">Sliced to Order.</span></span>
+          <span class="lang-zh">千揉百擀<br><span class="text-gold">每一口皆是匠心</span></span>
+        </h1>
+
+        <p class="font-sans text-base sm:text-lg text-sage-gray leading-relaxed max-w-lg">
+          <span class="lang-en">Experience the authentic art of wheat flour noodles, rolled by hand and cut daily. Served with rich, simmered broths and masterfully crafted spicy duck.</span>
+          <span class="lang-zh">精选优质小麦，每日鲜粉和面，千次揉揉按压，只为成就一碗筋道十足的绝妙手擀面。配以秘制老火浓汤与香辣卤鸭，尊享地道中华风味。</span>
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap gap-4 pt-4">
+          <a href="#menu" class="btn btn-gold btn-large">
+            <span class="lang-en">Explore the Menu</span>
+            <span class="lang-zh">浏览菜单</span>
+          </a>
+          <a href="#reservation" class="btn btn-outline btn-large">
+            <span class="lang-en">Reserve a Table</span>
+            <span class="lang-zh">即刻订座</span>
+          </a>
+        </div>
+
+        <!-- Meta Details (Address / Opening) -->
+        <div class="grid grid-cols-2 gap-6 pt-8 border-t border-gold-20 max-w-md font-sans text-xs text-cream uppercase tracking-wider">
+          <div>
+            <span class="block text-gold mb-1 font-semibold">
+              <span class="lang-en">Location</span>
+              <span class="lang-zh">面馆地址</span>
+            </span>
+            <span>3101 Kennedy Rd, Toronto</span>
+          </div>
+          <div>
+            <span class="block text-gold mb-1 font-semibold">
+              <span class="lang-en">Daily Hours</span>
+              <span class="lang-zh">营业时间</span>
+            </span>
+            <span>11:00 AM - 10:00 PM</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Smooth Bottom Wave/Scroll Indicator -->
+    <a href="#craft" class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-cream z-20 animate-bounce duration-1000 hidden md:block" aria-label="Scroll to story">
+      <i class="fa-solid fa-chevron-down text-lg text-gold"></i>
+    </a>
+  </section>
+
+  <!-- The Craft Section (Story) -->
+  <section id="craft" class="py-24 bg-dark-jade-95 relative border-y border-gold-10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Visual Showcase -->
+      <div class="lg:col-span-6 relative group rounded-lg overflow-hidden border border-gold-20 shadow-2xl reveal">
+        <div class="absolute inset-0 bg-dark-jade bg-opacity-20 z-10 transition-opacity duration-500 group-hover:bg-opacity-10"></div>
+        <img src="assets/crafting_noodle.png" alt="Chef hands rolling raw dough" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-103">
+        <!-- Gold Trim Border (Classic detail) -->
+        <div class="absolute inset-4 border border-gold-30 z-20 pointer-events-none"></div>
+      </div>
+
+      <!-- Text Story -->
+      <div class="lg:col-span-6 space-y-6 reveal">
+        
+        <div class="flex items-center space-x-3 text-gold">
+          <span class="h-px w-8 bg-gold"></span>
+          <span class="font-sans font-semibold text-xs uppercase tracking-widest">
+            <span class="lang-en">The Art of Hand-Rolling</span>
+            <span class="lang-zh">传统手擀工艺</span>
+          </span>
+        </div>
+
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-cream">
+          <span class="lang-en">No Machines. No Shortcuts.<br>Just <span class="text-gold">Pure Craftsmanship.</span></span>
+          <span class="lang-zh">无机械无捷径，<br>唯手擀自成<span class="text-gold">绝活与匠心</span></span>
+        </h2>
+
+        <p class="font-sans text-base text-sage-gray leading-relaxed">
+          <span class="lang-en">At Rolled and Ready, we preserve the classic Northern Chinese heritage of handcrafting noodles. Our master flour artisans spend hours every morning mixing, hand-rolling, and folder-stacking fresh organic wheat dough to prepare flat sheets. When you order, each noodle is sliced straight to the boiling hearth, retaining the perfect springy chew ("Q-texture") that no automated press could ever duplicate.</span>
+          <span class="lang-zh">在一碗手擀面（Rolled and Ready），我们严格遵循华北传统古法，专注做最纯正的手工面条。每日晨曦，匠人师傅手工揉面，运用擀面杖历经千百次擀压、折叠，形成薄厚均匀的面片。有客唤面时，刀工起落，现切现下，起锅筋道，爽滑爽口。这种独特的饱满咬劲与弹性，是任何流水线机器都无法媲美的味觉尊严。</span>
+        </p>
+
+        <!-- Dynamic Icon Grid (Classic & Modern Details) -->
+        <div class="grid grid-cols-2 gap-6 pt-6 font-sans">
+          <div class="flex items-start space-x-3">
+            <span class="p-2 rounded bg-sage-green-20 text-gold border border-gold-20">
+              <i class="fa-solid fa-wheat-awn text-sm"></i>
+            </span>
+            <div>
+              <h4 class="text-sm font-semibold text-cream">
+                <span class="lang-en">Stone-Ground Flour</span>
+                <span class="lang-zh">精选石磨面粉</span>
+              </h4>
+              <p class="text-xs text-sage-gray mt-1">
+                <span class="lang-en">100% organic, unbleached Canadian wheat grain.</span>
+                <span class="lang-zh">严选高蛋白天然加国面粉，无添加麦香纯正。</span>
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start space-x-3">
+            <span class="p-2 rounded bg-sage-green-20 text-gold border border-gold-20">
+              <i class="fa-solid fa-fire-burner text-sm"></i>
+            </span>
+            <div>
+              <h4 class="text-sm font-semibold text-cream">
+                <span class="lang-en">24h Simmered Broth</span>
+                <span class="lang-zh">廿四小时老火慢熬</span>
+              </h4>
+              <p class="text-xs text-sage-gray mt-1">
+                <span class="lang-en">Slow cooked beef and pork bones with Chinese spices.</span>
+                <span class="lang-zh">牛骨猪骨文火煲制，廿味传统草本秘方入汤。</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Menu Section -->
+  <section id="menu" class="py-24 bg-dark-jade relative">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+        <div class="flex items-center justify-center space-x-3 text-gold">
+          <span class="h-px w-8 bg-gold"></span>
+          <span class="font-sans font-semibold text-xs uppercase tracking-widest">
+            <span class="lang-en">Curated Culinary Selection</span>
+            <span class="lang-zh">面馆传家菜谱</span>
+          </span>
+          <span class="h-px w-8 bg-gold"></span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-cream">
+          <span class="lang-en">Explore Our Authentic Flavors</span>
+          <span class="lang-zh">寻味华夏 地道传承</span>
+        </h2>
+        <p class="font-sans text-sm text-sage-gray">
+          <span class="lang-en">Toggle categories below to explore our hand-rolled noodles, Wuhan spicy duck specialties, cold side dishes, value combos, and beers.</span>
+          <span class="lang-zh">点击下方分类，轻松挑选匠心手擀面、特色香辣武汉卤鸭、清爽冷盘凉菜、特惠套餐和佐餐酒水。</span>
+        </p>
+      </div>
+
+      <!-- Menu Navigation Tabs (Bilingual) -->
+      <div class="flex flex-wrap justify-center gap-2 mb-12 max-w-3xl mx-auto font-sans text-sm">
+        <button class="tab-btn active" data-category="noodles">
+          <span class="lang-en">Noodle Bowls</span>
+          <span class="lang-zh">经典手擀面</span>
+        </button>
+        <button class="tab-btn" data-category="appetizers">
+          <span class="lang-en">Appetizers & Sides</span>
+          <span class="lang-zh">精品涼菜</span>
+        </button>
+        <button class="tab-btn" data-category="duck">
+          <span class="lang-en">Spicy Braised Duck</span>
+          <span class="lang-zh">香辣卤鸭</span>
+        </button>
+        <button class="tab-btn" data-category="combos">
+          <span class="lang-en">House Combos</span>
+          <span class="lang-zh">超值套餐</span>
+        </button>
+        <button class="tab-btn" data-category="beverages">
+          <span class="lang-en">Drinks & Beer</span>
+          <span class="lang-zh">经典酒水</span>
+        </button>
+      </div>
+
+      <!-- Dynamic Menu Grid Container -->
+      <div id="menu-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Category: Noodles -->
+        <div class="menu-card reveal" data-item-category="noodles">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Beef Noodles</span>
+              <span class="lang-zh">紅燒牛肉麵</span>
+            </h3>
+            <span class="menu-price">$18.99</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Slow-simmered beef brisket and shank, deeply aromatic house-spiced broth, freshly pulled wheat noodles, cilantro and scallions.</span>
+              <span class="lang-zh">每日文火煨炖精选牛腩与牛腱肉，汤底醇厚浓郁，配以爽滑筋道手擀面，撒上新鲜香菜与翠绿小葱。</span>
+            </p>
+            <div class="menu-tags">
+              <span class="tag-spice"><i class="fa-solid fa-pepper-hot text-red"></i> Spice level: Mild</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="noodles">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Pork Intestines Noodles</span>
+              <span class="lang-zh">肥腸手擀麵</span>
+            </h3>
+            <span class="menu-price">$16.99</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Slow-braised pork intestines cleaned to perfection, flavored with star anise and Sichuan peppercorn in a robust savory sauce.</span>
+              <span class="lang-zh">古法卤制秘制猪肥肠，清理极其洁净，配上大料川花椒爆香，肥肠软糯有嚼劲，汤汁红亮香气扑鼻。</span>
+            </p>
+            <div class="menu-tags">
+              <span class="tag-spice"><i class="fa-solid fa-pepper-hot text-red"></i> Spice level: Medium</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="noodles">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Pork Ribs Noodles</span>
+              <span class="lang-zh">排骨手擀麵</span>
+            </h3>
+            <span class="menu-price">$16.99</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Fork-tender braised pork ribs in a rich, traditional golden marrow stock, finished with fresh bok choy and house-pickled greens.</span>
+              <span class="lang-zh">精心排骨慢火煲至骨肉分离，浇以鲜美浓郁猪骨原汤，缀以鲜嫩小白菜与手炒香脆酸菜，醇厚暖胃。</span>
+            </p>
+            <div class="menu-tags">
+              <span class="tag-label">Signature / 招牌推荐</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="noodles">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Braised Pork Belly Noodles</span>
+              <span class="lang-zh">把子肉湯麵</span>
+            </h3>
+            <span class="menu-price">$16.99</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Traditional Shandong-style thick pork belly slab, braised overnight in heavy soy and dry spices. Meltingly tender and savory.</span>
+              <span class="lang-zh">经典鲁味把子肉，大块五花肉小火慢炖整夜，酱香透骨，肥而不腻，瘦而不柴，汤头油亮，极为过瘾。</span>
+            </p>
+            <div class="menu-tags">
+              <span class="tag-label">Classic / 传统风味</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="noodles">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Tomato & Egg Sauce Noodles</span>
+              <span class="lang-zh">番茄雞蛋打滷麵</span>
+            </h3>
+            <span class="menu-price">$13.99</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Warm, classic comfort dish. Sweet and tangy vine-ripened tomatoes stir-fried with fluffy soft-scrambled eggs in a thick savory sauce.</span>
+              <span class="lang-zh">充满家常温度的暖心之作。多汁熟透番茄与松软滑蛋大火快炒，酱汁酸甜醇厚，均匀裹满每一根筋道面条。</span>
+            </p>
+            <div class="menu-tags">
+              <span class="tag-label">Vegetarian-friendly / 蛋奶素</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category: Appetizers -->
+        <div class="menu-card reveal" data-item-category="appetizers">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Cold Cut Chicken (Mouth-Watering)</span>
+              <span class="lang-zh">口水雞</span>
+            </h3>
+            <span class="menu-price">$9.49</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Poached bone-in chicken thighs, chilled and sliced, drenched in our house chili oil, sesame paste, Sichuan peppercorns, crushed peanuts.</span>
+              <span class="lang-zh">秘法浸熟鸡腿肉，冰镇锁汁切块，淋满红亮辣椒油、醇香芝麻酱、微麻花椒油，撒上香脆花生碎与芝麻。</span>
+            </p>
+            <div class="menu-tags">
+              <span class="tag-spice"><i class="fa-solid fa-pepper-hot text-red"></i> Spicy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="appetizers">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Cold Pig's Ear with Chili Sauce</span>
+              <span class="lang-zh">紅油耳絲</span>
+            </h3>
+            <span class="menu-price">$8.29</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Thinly julienned crunchy pig's ears, tossed in aromatic garlic chili oil, vinegar, and Chinese celery. Crisp and delightfully textured.</span>
+              <span class="lang-zh">刀工精细的猪耳切丝，配以蒜香红油、陈醋与香芹碎拌匀。爽脆弹牙，胶原蛋白丰富，红亮开胃。</span>
+            </p>
+            <div class="menu-tags">
+              <span class="tag-spice"><i class="fa-solid fa-pepper-hot text-red"></i> Spicy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="appetizers">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Cold Kelp Strips</span>
+              <span class="lang-zh">海帶絲</span>
+            </h3>
+            <span class="menu-price">$6.99</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Crunchy marine kelp julienned, dressed in black vinegar, roasted sesame oil, garlic paste, and fresh red chilies.</span>
+              <span class="lang-zh">细切爽脆深海海带丝，融入老陈醋、熟芝麻油、浓香大蒜泥与新鲜红椒圈拌制。酸辣开胃，爽口解腻。</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="appetizers">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Cold Shredded Bean Curd Skin</span>
+              <span class="lang-zh">乾豆腐絲</span>
+            </h3>
+            <span class="menu-price">$6.99</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Finely sliced tofu skins tossed with thin cilantro sprigs, minced garlic, white sesame seeds, and clear sesame-soy vinaigrette.</span>
+              <span class="lang-zh">极细切香干豆腐皮，佐以鲜嫩香菜段、细腻蒜蓉、炒香白芝麻，淋上特调清亮芝麻酱油醋汁，咸鲜怡人。</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="appetizers">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Cold Shredded Black Fungus</span>
+              <span class="lang-zh">凉拌木耳丝</span>
+            </h3>
+            <span class="menu-price">$6.99</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Crispy premium black fungus wood-ear mushrooms, shredded and tossed with fresh red peppers, cilantro, wild mountain pepper oil.</span>
+              <span class="lang-zh">精选爽脆黑木耳切丝，配上红椒圈与香菜，滴入野生山椒油和秘制醋汁。清爽解油，带着一丝微麻。</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="appetizers">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Cold Shredded Potato</span>
+              <span class="lang-zh">酸辣土豆絲</span>
+            </h3>
+            <span class="menu-price">$6.99</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Crisp, slightly blanched shredded potatoes quick-tossed with white vinegar, dried red chilies, and Sichuan flower pepper oil.</span>
+              <span class="lang-zh">大火快速过水汆烫的极细土豆丝，用白醋、干红辣椒段和花椒油快速爆拌。酸辣冰爽，口感极致爽脆。</span>
+            </p>
+            <div class="menu-tags">
+              <span class="tag-spice"><i class="fa-solid fa-pepper-hot text-red"></i> Mild</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="appetizers">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Marinated White Radish</span>
+              <span class="lang-zh">爽口腌蘿蔔</span>
+            </h3>
+            <span class="menu-price">$4.49</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Sweet and sour crunchy white radish blocks, marinated in natural rice vinegar and cane sugar. Classic palate cleanser.</span>
+              <span class="lang-zh">精选白萝卜切块，经天然大米醋与白蔗糖冷泡腌制。酸甜均衡，咬下多汁脆嫩，极佳的餐前解腻小菜。</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="appetizers">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">House Kimchi</span>
+              <span class="lang-zh">风味泡菜</span>
+            </h3>
+            <span class="menu-price">$4.49</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Crisp fermented Napa cabbage seasoned with Korean chili powder, apple-pear purée, garlic and wild ginger.</span>
+              <span class="lang-zh">新鲜大白菜加入特制辣椒粉、苹果梨泥、生姜蒜蓉等天然发酵而成。口感爽脆酸辣，回甘生津。</span>
+            </p>
+            <div class="menu-tags">
+              <span class="tag-spice"><i class="fa-solid fa-pepper-hot text-red"></i> Mild</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="appetizers">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Braised Tofu Curd</span>
+              <span class="lang-zh">蓑衣乾子</span>
+            </h3>
+            <span class="menu-price">$1.99</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Dense, accordion-cut fried tofu sheets braised in rich soy and 5-spice anise star marinade. Incredibly juicy.</span>
+              <span class="lang-zh">经独特手艺切成风琴状的油炸干子，浸入酱油与八角等香料制成的老卤汁中慢炖，饱含丰沛汁水。</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Category: Duck -->
+        <div class="menu-card reveal" data-item-category="duck">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Spicy Duck Tongues (12 Pcs)</span>
+              <span class="lang-zh">香辣卤鸭舌 (12个)</span>
+            </h3>
+            <span class="menu-price">$12.99</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Upscale Wuhan-style specialty. Melt-in-mouth tender braised duck tongues packed with intense soy, chili, and Sichuan pepper.</span>
+              <span class="lang-zh">高端武汉风味名吃。精选肥嫩鸭舌，卤制入骨，质地软糯细嫩，香辣麻底交织，越嚼越香。</span>
+            </p>
+            <div class="menu-tags">
+              <span class="tag-spice"><i class="fa-solid fa-pepper-hot text-red"></i> Heavy Spice</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="duck">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Spicy Duck Necks (2 Pcs)</span>
+              <span class="lang-zh">香辣卤鸭脖 (2根)</span>
+            </h3>
+            <span class="menu-price">$11.99</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Classic street-style chopped duck necks, slow braised in multi-layered chili oil and herbs. Perfect draft beer companion.</span>
+              <span class="lang-zh">地道江城街头风味。秘制草药香料卤熟切段，辣口微麻，肉质结实干香，是佐餐啤酒的灵魂绝配。</span>
+            </p>
+            <div class="menu-tags">
+              <span class="tag-spice"><i class="fa-solid fa-pepper-hot text-red"></i> Heavy Spice</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="duck">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Spicy Duck Legs (1 Pc)</span>
+              <span class="lang-zh">香辣大鸭腿 (1只)</span>
+            </h3>
+            <span class="menu-price">$10.49</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Meaty whole duck leg braised in heavy soy, Sichuan bay leaf, dried chilies and rock sugar. Juicy, savory, and moderately spicy.</span>
+              <span class="lang-zh">整只肉质饱满的肥嫩大鸭腿，在浓郁酱油、香叶、干辣椒与冰糖熬制的老卤汁中煨透。肉嫩汁浓。</span>
+            </p>
+            <div class="menu-tags">
+              <span class="tag-spice"><i class="fa-solid fa-pepper-hot text-red"></i> Spicy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="duck">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Spicy Duck Wings (4 Pcs)</span>
+              <span class="lang-zh">香辣卤鸭翅 (4只)</span>
+            </h3>
+            <span class="menu-price">$7.99</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Firm, skin-on duck wings, marinated and braised until the spices permeate deep into the muscle fiber. High in flavor.</span>
+              <span class="lang-zh">精选皮弹肉紧的四只大鸭翅，长时卤制，使得麻辣药香深透每一缕肉质纤维，干香有嚼头。</span>
+            </p>
+            <div class="menu-tags">
+              <span class="tag-spice"><i class="fa-solid fa-pepper-hot text-red"></i> Spicy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="duck">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Spicy Duck Head (1 Pc)</span>
+              <span class="lang-zh">香辣卤鸭头 (1只)</span>
+            </h3>
+            <span class="menu-price">$5.49</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Split whole duck head simmered in robust spicy brine. Rich in deep flavor pockets, perfect for authentic braise connoisseurs.</span>
+              <span class="lang-zh">卤味饕客的极致之选。鸭头对半切开在浓辣卤水中煨至骨酥肉嫩，皮香脑满，酱香极其浓醇。</span>
+            </p>
+            <div class="menu-tags">
+              <span class="tag-spice"><i class="fa-solid fa-pepper-hot text-red"></i> Heavy Spice</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="duck">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Spicy Duck Feet (4 Pcs)</span>
+              <span class="lang-zh">香辣卤鸭掌 (4只)</span>
+            </h3>
+            <span class="menu-price">$4.99</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Gelatinous duck web feet, braised until skin is wrinkled and tender. Loaded with rich, spicy herbal flavor and fun to eat.</span>
+              <span class="lang-zh">四只富含胶原的鸭掌，经老卤慢煨至皮层微皱软烂，香辣卤汁层层渗入，骨香多汁，越啃越上头。</span>
+            </p>
+            <div class="menu-tags">
+              <span class="tag-spice"><i class="fa-solid fa-pepper-hot text-red"></i> Spicy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category: Combos -->
+        <div class="menu-card reveal" data-item-category="combos">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Combo: Beef Noodle & Duck Head</span>
+              <span class="lang-zh">红烧牛肉面 + 鸭头1个 + 汽水</span>
+            </h3>
+            <span class="menu-price">$23.49</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Our signature steaming bowl of Beef Hand-Rolled Noodles, paired with one Spicy Braised Duck Head, and a cold canned soft drink.</span>
+              <span class="lang-zh">一碗热气腾腾的招牌红烧牛肉手擀面，搭配一个特色香辣卤鸭头，以及一罐清凉解渴的冰镇汽水。</span>
+            </p>
+            <div class="menu-tags">
+              <span class="tag-label">Highly Recommended / 必点超值</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="combos">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Combo: Beef Noodle & Duck Neck</span>
+              <span class="lang-zh">红烧牛肉面 + 鸭脖1根 + 汽水</span>
+            </h3>
+            <span class="menu-price">$23.49</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Signature Beef Hand-Rolled Noodles served alongside one large Spicy Braised Duck Neck, and a cold soft drink. Perfect solo hearty lunch.</span>
+              <span class="lang-zh">招牌红烧牛肉面，搭配一整根切断特色香辣卤鸭脖，以及一罐清爽汽水。丰盛扎实的超值单人飨宴。</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="combos">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Combo: Beef Noodle & Duck Feet</span>
+              <span class="lang-zh">红烧牛肉面 + 鸭掌2个 + 汽水</span>
+            </h3>
+            <span class="menu-price">$20.99</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Signature Beef Hand-Rolled Noodles served with two chewable Spicy Braised Duck Feet, and a soft drink. Great balance of noodle and collagen.</span>
+              <span class="lang-zh">一碗红烧牛肉手擀面，佐以两只筋道入骨的特色香辣卤鸭掌，和一罐解渴汽水。绝妙滋味两全其美。</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="combos">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Combo: Beef Noodle & Egg/Tofu</span>
+              <span class="lang-zh">红烧牛肉面 + 卤蛋/干子 + 汽水</span>
+            </h3>
+            <span class="menu-price">$19.49</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Signature Beef Hand-Rolled Noodles accompanied by your choice of one Braised Egg OR one accordion Braised Tofu Curd, and a soft drink.</span>
+              <span class="lang-zh">一碗红烧牛肉手擀面，搭配一个香浓卤蛋或一整块风琴蓑衣干子，再加一罐解渴汽水。经典管饱滋味。</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Category: Beverages -->
+        <div class="menu-card reveal" data-item-category="beverages">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Nongfu Spring Sugar-Free Tea</span>
+              <span class="lang-zh">东方树叶 (乌龙/绿茶)</span>
+            </h3>
+            <span class="menu-price">$3.99</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Famous Chinese unsweetened green or oolong tea. High quality, completely natural leaf-brewed tea in a bottle.</span>
+              <span class="lang-zh">风靡全国的农夫山泉东方树叶无糖原叶茶。真茶提取，茶汤清亮，无糖零卡，解辣润喉的极佳之选。</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="beverages">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Osmanthus Sour Plum Drink</span>
+              <span class="lang-zh">老北京桂花酸梅汤</span>
+            </h3>
+            <span class="menu-price">$3.99</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Traditional smoky-sweet dark plum juice infused with fragrant sweet osmanthus blossoms. The ultimate anti-spicy herbal coolant.</span>
+              <span class="lang-zh">遵循古法熬制的酸梅汤，点缀淡淡金秋桂花香。烟熏酸甜，生津止渴，是搭配麻辣卤味的最佳灵魂饮品。</span>
+            </p>
+            <div class="menu-tags">
+              <span class="tag-label">House Favorite / 强烈推荐</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="beverages">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Arctic Ocean Tangerine Soda</span>
+              <span class="lang-zh">北冰洋橙汁汽水</span>
+            </h3>
+            <span class="menu-price">$3.99</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Nostalgic Beijing carbonated orange soda. Made with real imported tangerine peel oil. Sparkling, tart, and highly refreshing.</span>
+              <span class="lang-zh">充满情怀的北京经典北冰洋桔子汽水。气泡绵密充沛，加入天然桔皮油，冰爽甘甜，一口解千辣。</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="beverages">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Coconut Milk</span>
+              <span class="lang-zh">椰树牌椰汁</span>
+            </h3>
+            <span class="menu-price">$3.49</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Genuine Hainan coconut juice in a can. Creamy, silky, mildly sweet, and instantly calms Sichuan hot spice on the palate.</span>
+              <span class="lang-zh">海南正宗椰树牌纯椰汁。选用鲜椰肉榨汁，椰香醇浓，丝滑柔顺，微甜不腻，是公认解辣第一神器。</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="beverages">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">KSF Iced Black Tea</span>
+              <span class="lang-zh">康师傅冰红茶</span>
+            </h3>
+            <span class="menu-price">$2.99</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Classic Chinese sweetened lemon iced tea. Extremely popular, crisp, thirst-quenching.</span>
+              <span class="lang-zh">经典的康师傅冰红茶。茶香与清甜柠檬风味巧妙平衡，清甜爽口，畅爽过瘾。</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="beverages">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Vita Lemon Tea</span>
+              <span class="lang-zh">维他柠檬茶</span>
+            </h3>
+            <span class="menu-price">$2.99</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Famous bold black tea with robust lemon juice. Strong, slightly astringent, deeply aromatic, highly addictive flavor profile.</span>
+              <span class="lang-zh">红遍华人圈的维他柠檬茶。真茶真柠檬，红茶涩感与柠檬酸甜完美相融，独特风味令人欲罢不能。</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="beverages">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Aquafina Water / Canned Pop</span>
+              <span class="lang-zh">矿泉水 / 可口可乐 / 汽水</span>
+            </h3>
+            <span class="menu-price">$2.49</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Choose from chilled Aquafina purified water, Coca-Cola, Diet Coke, Sprite, or ginger ale.</span>
+              <span class="lang-zh">冰镇矿泉水或各式易拉罐汽水（可口可乐、零度可乐、雪碧、姜汁汽水等）。</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="beverages">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Imported Japanese & Euro Beers</span>
+              <span class="lang-zh">进口啤酒 (朝日/喜力/科罗娜/1664)</span>
+            </h3>
+            <span class="menu-price">$7.59</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Selection of cold 330ml bottles: Asahi Super Dry, Heineken, Corona Extra, or Kronenbourg 1664. Excellent cooling pairing.</span>
+              <span class="lang-zh">精选冰镇330ml瓶装进口啤酒：朝日超爽、喜力、科罗娜、1664白啤。麦香十足，绝妙冰爽。</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal" data-item-category="beverages">
+          <div class="menu-header">
+            <h3 class="menu-title font-serif">
+              <span class="lang-en">Domestic Lager Beers</span>
+              <span class="lang-zh">经典拉格啤酒 (百威/摩森/银子弹)</span>
+            </h3>
+            <span class="menu-price">$6.49</span>
+          </div>
+          <div class="menu-body font-sans">
+            <p class="menu-desc">
+              <span class="lang-en">Crisp, refreshing light lagers including Budweiser, Molson Canadian, and Coors Light. Smooth and easy-drinking.</span>
+              <span class="lang-zh">冰爽易饮的经典大牌拉格啤酒：百威、加拿大摩森、银子弹啤酒。入口清爽顺喉，老牌经典。</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Guest Reservation Section -->
+  <section id="reservation" class="py-24 bg-dark-jade-95 relative border-y border-gold-10">
+    <!-- Grid layout inside container -->
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12">
+      
+      <!-- Styled Booking Card -->
+      <div class="lg:col-span-7 bg-dark-jade bg-opacity-40 p-8 sm:p-10 rounded-lg border border-gold-20 shadow-xl relative overflow-hidden reveal">
+        <!-- Accent lines -->
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-gold to-transparent"></div>
+        
+        <div class="space-y-4 mb-8">
+          <div class="flex items-center space-x-2 text-gold">
+            <i class="fa-solid fa-utensils text-sm"></i>
+            <span class="font-sans font-semibold text-xs uppercase tracking-widest">
+              <span class="lang-en">Dine with Us</span>
+              <span class="lang-zh">客座席位预订</span>
+            </span>
+          </div>
+          <h3 class="font-serif text-2xl sm:text-3xl font-bold text-cream">
+            <span class="lang-en">Reserve Your Table</span>
+            <span class="lang-zh">预订您的雅座</span>
+          </h3>
+          <p class="font-sans text-xs text-sage-gray">
+            <span class="lang-en">For parties larger than 8, please contact us directly via telephone. Walking-in tables are always welcome!</span>
+            <span class="lang-zh">若您的用餐人数多于8人，请直接拨打电话联系我们。面馆始终为无预约顾客预留部分桌椅，欢迎随时光临！</span>
+          </p>
+        </div>
+
+        <!-- Interactive HTML Form -->
+        <form id="booking-form" class="space-y-6 font-sans text-sm">
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="flex flex-col space-y-2">
+              <label for="book-name" class="text-xs font-semibold uppercase tracking-wider text-gold">
+                <span class="lang-en">Full Name *</span>
+                <span class="lang-zh">您的尊姓大名 *</span>
+              </label>
+              <input type="text" id="book-name" required placeholder="John Doe" class="input-field">
+            </div>
+            <div class="flex flex-col space-y-2">
+              <label for="book-phone" class="text-xs font-semibold uppercase tracking-wider text-gold">
+                <span class="lang-en">Phone Number *</span>
+                <span class="lang-zh">联系电话 *</span>
+              </label>
+              <input type="tel" id="book-phone" required placeholder="(416) 555-0199" class="input-field">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div class="flex flex-col space-y-2">
+              <label for="book-guests" class="text-xs font-semibold uppercase tracking-wider text-gold">
+                <span class="lang-en">Guests *</span>
+                <span class="lang-zh">用餐人数 *</span>
+              </label>
+              <select id="book-guests" required class="input-field select-field">
+                <option value="1">1 Guest / 1位</option>
+                <option value="2" selected>2 Guests / 2位</option>
+                <option value="3">3 Guests / 3位</option>
+                <option value="4">4 Guests / 4位</option>
+                <option value="5">5 Guests / 5位</option>
+                <option value="6">6 Guests / 6位</option>
+                <option value="7">7 Guests / 7位</option>
+                <option value="8">8 Guests / 8位</option>
+              </select>
+            </div>
+            <div class="flex flex-col space-y-2">
+              <label for="book-date" class="text-xs font-semibold uppercase tracking-wider text-gold">
+                <span class="lang-en">Date *</span>
+                <span class="lang-zh">预订日期 *</span>
+              </label>
+              <input type="date" id="book-date" required class="input-field">
+            </div>
+            <div class="flex flex-col space-y-2">
+              <label for="book-time" class="text-xs font-semibold uppercase tracking-wider text-gold">
+                <span class="lang-en">Time *</span>
+                <span class="lang-zh">预订时间 *</span>
+              </label>
+              <select id="book-time" required class="input-field select-field">
+                <option value="11:30 AM">11:30 AM</option>
+                <option value="12:00 PM">12:00 PM</option>
+                <option value="12:30 PM">12:30 PM</option>
+                <option value="1:00 PM">1:00 PM</option>
+                <option value="1:30 PM">1:30 PM</option>
+                <option value="5:00 PM">5:00 PM</option>
+                <option value="5:30 PM">5:30 PM</option>
+                <option value="6:00 PM">6:00 PM</option>
+                <option value="6:30 PM" selected>6:30 PM</option>
+                <option value="7:00 PM">7:00 PM</option>
+                <option value="7:30 PM">7:30 PM</option>
+                <option value="8:00 PM">8:00 PM</option>
+                <option value="8:30 PM">8:30 PM</option>
+                <option value="9:00 PM">9:00 PM</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="flex flex-col space-y-2">
+            <label for="book-notes" class="text-xs font-semibold uppercase tracking-wider text-gold">
+              <span class="lang-en">Special Requests / Allergies</span>
+              <span class="lang-zh">特殊要求 / 备注或过敏源</span>
+            </label>
+            <textarea id="book-notes" rows="3" placeholder="e.g. Vegetarian, baby high-chair, non-spicy broth, food allergies..." class="input-field resize-none"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-gold w-full py-4 text-base font-semibold tracking-widest uppercase">
+            <span class="lang-en">Confirm Reservation</span>
+            <span class="lang-zh">确认预约座席</span>
+          </button>
+
+        </form>
+
+        <!-- Custom HTML success popup drawer -->
+        <div id="booking-success" class="absolute inset-0 bg-dark-jade bg-opacity-98 flex flex-col justify-center items-center p-8 text-center translate-y-full opacity-0 transition-all duration-500 z-30">
+          <span class="w-16 h-16 rounded-full bg-sage-green-20 text-gold flex items-center justify-center border border-gold-30 text-2xl mb-6 scale-90">
+            <i class="fa-solid fa-calendar-check"></i>
+          </span>
+          <h4 class="font-serif text-2xl font-bold text-cream mb-3">
+            <span class="lang-en">Reservation Confirmed!</span>
+            <span class="lang-zh">预订提交成功！</span>
+          </h4>
+          <p class="font-sans text-sm text-sage-gray leading-relaxed max-w-sm mb-8">
+            <span class="lang-en">Thank you for booking at Rolled and Ready. A confirmation text was sent to your phone. We look forward to serving you!</span>
+            <span class="lang-zh">感谢您预订一碗手擀面。预订确认短信已发送至您的联系手机。我们期待为您呈现地道美味！</span>
+          </p>
+          <button id="btn-reset-booking" class="btn btn-gold text-xs px-6 py-2">
+            <span class="lang-en">Done / Book Another</span>
+            <span class="lang-zh">完成 / 预订其他时段</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Contact Details & Map Mockup Info -->
+      <div id="contact" class="lg:col-span-5 flex flex-col justify-between space-y-8 reveal">
+        
+        <div class="space-y-4">
+          <div class="flex items-center space-x-2 text-gold">
+            <i class="fa-solid fa-map-pin text-sm"></i>
+            <span class="font-sans font-semibold text-xs uppercase tracking-widest">
+              <span class="lang-en">Find Us</span>
+              <span class="lang-zh">面馆位置</span>
+            </span>
+          </div>
+          <h3 class="font-serif text-2xl sm:text-3xl font-bold text-cream">
+            <span class="lang-en">Visit Rolled & Ready</span>
+            <span class="lang-zh">莅临一碗手擀面</span>
+          </h3>
+          <p class="font-sans text-sm text-sage-gray leading-relaxed">
+            <span class="lang-en">Nestled in the heart of Scarborough, our warm dining room welcomes families, foodies, and noodle lovers alike. Come taste the tradition today.</span>
+            <span class="lang-zh">坐落于多伦多士嘉堡中心地带，我们温馨典雅的餐厅时刻敞开大门，欢迎所有食客、家庭和手工面爱好者前来寻味地道中式温暖。</span>
+          </p>
+        </div>
+
+        <div class="space-y-4 font-sans text-sm text-cream">
+          <div class="flex items-center space-x-4">
+            <span class="text-gold text-base w-8 text-center"><i class="fa-solid fa-location-dot"></i></span>
+            <span>3101 Kennedy Road, Scarborough, ON M1V 5P4</span>
+          </div>
+          <a href="tel:+14165550199" class="flex items-center space-x-4 hover:text-gold transition-colors duration-300">
+            <span class="text-gold text-base w-8 text-center"><i class="fa-solid fa-phone"></i></span>
+            <span>+1 (416) 555-0199</span>
+          </a>
+          <a href="mailto:hello@rolledandready.com" class="flex items-center space-x-4 hover:text-gold transition-colors duration-300">
+            <span class="text-gold text-base w-8 text-center"><i class="fa-solid fa-envelope"></i></span>
+            <span>hello@rolledandready.com</span>
+          </a>
+        </div>
+
+        <!-- stylized premium CSS map illustration -->
+        <div class="map-mockup rounded-lg overflow-hidden border border-gold-20 shadow-lg relative h-48 bg-dark-jade bg-opacity-50">
+          <div class="absolute inset-0 z-0 bg-map opacity-35"></div>
+          <div class="absolute inset-0 z-10 bg-gradient-to-t from-dark-jade via-transparent to-transparent"></div>
+          
+          <!-- Map indicator tag -->
+          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center">
+            <span class="w-10 h-10 bg-gold text-dark-jade rounded-full shadow-lg border border-cream flex items-center justify-center text-base animate-pulse">
+              <i class="fa-solid fa-bowl-food"></i>
+            </span>
+            <span class="mt-2 bg-dark-jade bg-opacity-90 px-3 py-1 rounded border border-gold text-xs font-semibold text-cream tracking-wide text-center">
+              <span class="lang-en">Rolled & Ready</span>
+              <span class="lang-zh">一碗手擀面</span>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Restaurant Interior Spotlight -->
+  <section class="relative py-32 overflow-hidden border-b border-gold-10">
+    <div class="absolute inset-0 z-0">
+      <div class="absolute inset-0 bg-dark-jade bg-opacity-75 z-10"></div>
+      <img src="assets/dining_interior.png" alt="Rolled and Ready elegant dining room" class="w-full h-full object-cover object-center scale-102">
+    </div>
+
+    <div class="relative z-20 max-w-4xl mx-auto px-6 text-center space-y-6 reveal">
+      <div class="inline-block p-3 rounded-full bg-sage-green bg-opacity-20 border border-gold-30 text-gold mb-2">
+        <i class="fa-solid fa-award text-2xl"></i>
+      </div>
+      <h2 class="font-serif text-3xl sm:text-4xl font-bold text-cream">
+        <span class="lang-en">An Authentic Dine-in Experience</span>
+        <span class="lang-zh">尽享雅致温情就餐时刻</span>
+      </h2>
+      <p class="font-sans text-base text-sage-gray leading-relaxed max-w-2xl mx-auto">
+        <span class="lang-en">Step into our green wood-paneled salon under warm amber glow. We have designed our room in a modern-classic aesthetic to offer you comfort, quiet elegance, and an authentic taste of ancient Chinese hospitality. Perfect for intimate dinners, family gatherings, or late-night bowls of pure comfort.</span>
+        <span class="lang-zh">步入我们绿木壁镶、微光流泻的就餐雅室。我们将现代极简与古典中式巧妙融为一体，为您打造私密、清幽而大气的就餐氛围，完美承载古老东方古风的热情好客。无论是二人小酌、家庭聚餐还是深夜的一碗热面，这里皆是您的温情居所。</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Premium Footer -->
+  <footer class="bg-dark-jade-98 pt-16 pb-8 border-t border-gold-20 font-sans text-sm text-sage-gray">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 pb-12 border-b border-gold-10">
+      
+      <!-- Info Column -->
+      <div class="space-y-4">
+        <a href="#" class="flex flex-col logo-container">
+          <span class="brand-zh font-serif text-xl font-bold tracking-wider text-gold">一碗手擀面</span>
+          <span class="brand-en font-serif text-2xs font-semibold uppercase tracking-widest text-cream">Rolled & Ready</span>
+        </a>
+        <p class="text-xs leading-relaxed">
+          <span class="lang-en">Crafting authentic Northern Chinese hand-rolled wheat noodles and rich slow-simmered broths daily in Toronto. No shortcuts, just traditional mastery.</span>
+          <span class="lang-zh">每日在多伦多精心制作最正宗的中国北方传统手擀面与老火原汤。绝无机器妥协，坚守千年手艺。</span>
+        </p>
+      </div>
+
+      <!-- Links Column -->
+      <div class="space-y-4">
+        <h4 class="text-xs font-bold uppercase tracking-widest text-gold">
+          <span class="lang-en">Quick Navigation</span>
+          <span class="lang-zh">快捷导航</span>
+        </h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="#hero" class="hover:text-gold transition-colors duration-300">
+            <span class="lang-en">Home</span><span class="lang-zh">首页</span>
+          </a></li>
+          <li><a href="#craft" class="hover:text-gold transition-colors duration-300">
+            <span class="lang-en">The Craft</span><span class="lang-zh">面馆匠心</span>
+          </a></li>
+          <li><a href="#menu" class="hover:text-gold transition-colors duration-300">
+            <span class="lang-en">Menu</span><span class="lang-zh">经典菜单</span>
+          </a></li>
+          <li><a href="#reservation" class="hover:text-gold transition-colors duration-300">
+            <span class="lang-en">Reservations</span><span class="lang-zh">客座预订</span>
+          </a></li>
+        </ul>
+      </div>
+
+      <!-- Hours Column -->
+      <div class="space-y-4">
+        <h4 class="text-xs font-bold uppercase tracking-widest text-gold">
+          <span class="lang-en">Operating Hours</span>
+          <span class="lang-zh">营业时段</span>
+        </h4>
+        <ul class="space-y-2 text-xs font-medium">
+          <li class="flex justify-between">
+            <span class="lang-en">Monday - Sunday</span><span class="lang-zh">周一至周日</span>
+            <span class="text-cream">11:00 AM - 10:00 PM</span>
+          </li>
+          <li class="flex justify-between border-t border-gold-5 pt-2 mt-2">
+            <span class="lang-en">Dine-in Last Call</span><span class="lang-zh">堂食最后点餐</span>
+            <span class="text-cream">9:30 PM</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Location Column -->
+      <div class="space-y-4">
+        <h4 class="text-xs font-bold uppercase tracking-widest text-gold">
+          <span class="lang-en">Our Location</span>
+          <span class="lang-zh">面馆地址</span>
+        </h4>
+        <p class="text-xs leading-relaxed">
+          3101 Kennedy Road,<br>
+          Scarborough, ON M1V 5P4<br>
+          <span class="text-cream font-medium">Toronto, Canada</span>
+        </p>
+        <div class="flex space-x-3 text-base text-cream">
+          <a href="#" aria-label="Facebook link" class="hover:text-gold transition-colors duration-300"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="Instagram link" class="hover:text-gold transition-colors duration-300"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Yelp link" class="hover:text-gold transition-colors duration-300"><i class="fa-brands fa-yelp"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Copyright and Legal info -->
+    <div class="max-w-7xl mx-auto px-6 pt-8 flex flex-col sm:flex-row justify-between items-center text-2xs text-sage-gray space-y-4 sm:space-y-0">
+      <div>
+        <p>&copy; 2026 Rolled & Ready (一碗手擀面). <span class="lang-en">All Rights Reserved.</span><span class="lang-zh">保留所有权利。</span></p>
+      </div>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-gold transition-colors duration-300"><span class="lang-en">Privacy Policy</span><span class="lang-zh">隐私政策</span></a>
+        <a href="#" class="hover:text-gold transition-colors duration-300"><span class="lang-en">Terms of Service</span><span class="lang-zh">服务条款</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
