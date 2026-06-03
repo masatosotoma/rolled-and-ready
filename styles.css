@@ -68,6 +68,11 @@ html[lang="zh"] .font-sans {
 
 /* 3. Reusable Layout Utilities (Replacing Tailwind dependencies) */
 .max-w-7xl { max-width: 1280px; }
+.max-w-md { max-width: 28rem; }
+.max-w-lg { max-width: 32rem; }
+.max-w-2xl { max-width: 42rem; }
+.max-w-3xl { max-width: 48rem; }
+.max-w-4xl { max-width: 56rem; }
 .mx-auto { margin-left: auto; margin-right: auto; }
 .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
 .py-4 { padding-top: 1rem; padding-bottom: 1rem; }
@@ -106,6 +111,85 @@ html[lang="zh"] .font-sans {
 .z-50 { z-index: 50; }
 .overflow-hidden { overflow: hidden; }
 
+/* New Utility Layout & Spacing Classes */
+.hidden { display: none !important; }
+.opacity-0 { opacity: 0; }
+.opacity-35 { opacity: 0.35; }
+.invisible { visibility: hidden; }
+.tracking-wide { letter-spacing: 0.025em; }
+.focus\:outline-none:focus { outline: 2px solid transparent; outline-offset: 2px; }
+.resize-none { resize: none; }
+.rounded-full { border-radius: 9999px; }
+
+.gap-2 { gap: 0.5rem; }
+.grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.h-1 { height: 0.25rem; }
+.h-10 { height: 2.5rem; }
+.h-px { height: 1px; }
+.p-2 { padding: 0.5rem; }
+.p-3 { padding: 0.75rem; }
+.p-8 { padding: 2rem; }
+.w-10 { width: 2.5rem; }
+.w-8 { width: 2rem; }
+.w-16 { width: 4rem; }
+.h-16 { height: 4rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.pt-2 { padding-top: 0.5rem; }
+.pt-4 { padding-top: 1rem; }
+.pt-6 { padding-top: 1.5rem; }
+.pt-8 { padding-top: 2rem; }
+.px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
+.px-8 { padding-left: 2rem; padding-right: 2rem; }
+.py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+.py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+
+/* Transitions & Animations */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.duration-300 {
+  transition-duration: 300ms;
+  animation-duration: 300ms;
+}
+.duration-500 {
+  transition-duration: 500ms;
+  animation-duration: 500ms;
+}
+.duration-700 {
+  transition-duration: 700ms;
+  animation-duration: 700ms;
+}
+.duration-1000 {
+  transition-duration: 1000ms;
+  animation-duration: 1000ms;
+}
+
+/* Group Hover States */
+.group:hover .group-hover\:bg-opacity-10 {
+  background-color: rgba(10, 28, 21, 0.1);
+}
+.group:hover .group-hover\:scale-103 {
+  transform: scale(1.03);
+}
+
 /* Grid & Flex */
 .flex { display: flex; }
 .flex-col { flex-direction: column; }
@@ -132,20 +216,30 @@ html[lang="zh"] .font-sans {
   .sm\:inline-block { display: inline-block; }
   .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .sm\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .sm\:text-5xl { font-size: 3rem; }
+  .sm\:text-lg { font-size: 1.125rem; }
+  .sm\:text-4xl { font-size: 2.25rem; }
+  .sm\:p-10 { padding: 2.5rem; }
+  .sm\:text-3xl { font-size: 1.875rem; }
+  .sm\:flex-row { flex-direction: row; }
 }
 
 @media (min-width: 768px) {
   .md\:flex { display: flex; }
   .md\:hidden { display: none; }
+  .md\:block { display: block !important; }
   .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .md\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
 @media (min-width: 1024px) {
   .lg\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .lg\:grid-cols-12 { grid-template-columns: repeat(12, minmax(0, 1fr)); }
   .lg\:col-span-5 { grid-column: span 5 / span 5; }
   .lg\:col-span-6 { grid-column: span 6 / span 6; }
   .lg\:col-span-7 { grid-column: span 7 / span 7; }
+  .lg\:text-6xl { font-size: 3.75rem; }
 }
 
 /* Typography styles */
