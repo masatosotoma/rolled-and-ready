@@ -143,62 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
   filterMenu('noodles');
 
 
-  // ==========================================================================
-  // 5. GUEST RESERVATION FORM AND DRAWER SUBMISSION
-  // ==========================================================================
-  const bookingForm = document.getElementById('booking-form');
-  const successDrawer = document.getElementById('booking-success');
-  const resetBookingBtn = document.getElementById('btn-reset-booking');
 
-  // Set today's date as standard placeholder in datepicker
-  const dateInput = document.getElementById('book-date');
-  if (dateInput) {
-    const today = new Date();
-    const yyyy = today.getFullYear();
-    let mm = today.getMonth() + 1;
-    let dd = today.getDate();
-    
-    if (mm < 10) mm = '0' + mm;
-    if (dd < 10) dd = '0' + dd;
-    
-    dateInput.setAttribute('min', `${yyyy}-${mm}-${dd}`);
-    dateInput.value = `${yyyy}-${mm}-${dd}`;
-  }
-
-  // Handle Reservation Submission with animations and validation
-  if (bookingForm && successDrawer) {
-    bookingForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      
-      // Mock Client-Side Validation check success
-      const name = document.getElementById('book-name').value.trim();
-      const phone = document.getElementById('book-phone').value.trim();
-      
-      if (name !== '' && phone !== '') {
-        // Slide up the success confirmation modal
-        successDrawer.classList.add('show');
-      }
-    });
-  }
-
-  // Dismiss Drawer and reset Form fields
-  if (resetBookingBtn && successDrawer && bookingForm) {
-    resetBookingBtn.addEventListener('click', () => {
-      successDrawer.classList.remove('show');
-      bookingForm.reset();
-      
-      // Reset today's date placeholder
-      if (dateInput) {
-        const today = new Date();
-        const yyyy = today.getFullYear();
-        let mm = today.getMonth() + 1;
-        let dd = today.getDate();
-        if (mm < 10) mm = '0' + mm;
-        if (dd < 10) dd = '0' + dd;
-        dateInput.value = `${yyyy}-${mm}-${dd}`;
-      }
-    });
-  }
 
 
   // ==========================================================================

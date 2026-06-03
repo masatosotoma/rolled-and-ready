@@ -44,29 +44,19 @@
           <span class="lang-en">Menu</span>
           <span class="lang-zh">经典菜单</span>
         </a>
-        <a href="#reservation" class="nav-link">
-          <span class="lang-en">Reservations</span>
-          <span class="lang-zh">客座预订</span>
-        </a>
         <a href="#contact" class="nav-link">
           <span class="lang-en">Connect</span>
           <span class="lang-zh">联系我们</span>
         </a>
       </nav>
 
-      <!-- Right Actions: Language Switch & CTA -->
+      <!-- Right Actions: Language Switch -->
       <div class="flex items-center space-x-4">
         <!-- Elegant Language Toggle -->
         <button id="lang-switch" class="btn-lang font-sans font-semibold text-xs tracking-wider" aria-label="Toggle language">
           <span class="lang-en">Mandarin / 中文</span>
           <span class="lang-zh">English / EN</span>
         </button>
-        
-        <!-- Booking CTA -->
-        <a href="#reservation" class="btn btn-gold hidden sm:inline-block">
-          <span class="lang-en">Book Table</span>
-          <span class="lang-zh">即刻预订</span>
-        </a>
 
         <!-- Mobile Menu Toggle Button -->
         <button id="mobile-toggle" class="md:hidden text-cream focus:outline-none" aria-label="Toggle menu">
@@ -91,18 +81,9 @@
       <span class="lang-en">Menu</span>
       <span class="lang-zh">经典菜单</span>
     </a>
-    <a href="#reservation" class="mobile-nav-link">
-      <span class="lang-en">Reservations</span>
-      <span class="lang-zh">客座预订</span>
-    </a>
     <a href="#contact" class="mobile-nav-link">
       <span class="lang-en">Connect</span>
       <span class="lang-zh">联系我们</span>
-    </a>
-    
-    <a href="#reservation" class="btn btn-gold py-3 px-8 text-base">
-      <span class="lang-en">Book Table</span>
-      <span class="lang-zh">即刻预订</span>
     </a>
   </div>
 
@@ -143,10 +124,6 @@
           <a href="#menu" class="btn btn-gold btn-large">
             <span class="lang-en">Explore the Menu</span>
             <span class="lang-zh">浏览菜单</span>
-          </a>
-          <a href="#reservation" class="btn btn-outline btn-large">
-            <span class="lang-en">Reserve a Table</span>
-            <span class="lang-zh">即刻订座</span>
           </a>
         </div>
 
@@ -890,191 +867,76 @@
     </div>
   </section>
 
-  <!-- Guest Reservation Section -->
-  <section id="reservation" class="py-24 bg-dark-jade-95 relative border-y border-gold-10">
-    <!-- Grid layout inside container -->
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12">
+  <!-- Connect / Visit Section -->
+  <section id="contact" class="py-24 bg-dark-jade-95 relative border-y border-gold-10">
+    <div class="max-w-3xl mx-auto px-6 space-y-12 reveal">
       
-      <!-- Styled Booking Card -->
-      <div class="lg:col-span-7 bg-dark-jade bg-opacity-40 p-8 sm:p-10 rounded-lg border border-gold-20 shadow-xl relative overflow-hidden reveal">
-        <!-- Accent lines -->
-        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-gold to-transparent"></div>
-        
-        <div class="space-y-4 mb-8">
-          <div class="flex items-center space-x-2 text-gold">
-            <i class="fa-solid fa-utensils text-sm"></i>
-            <span class="font-sans font-semibold text-xs uppercase tracking-widest">
-              <span class="lang-en">Dine with Us</span>
-              <span class="lang-zh">客座席位预订</span>
-            </span>
-          </div>
-          <h3 class="font-serif text-2xl sm:text-3xl font-bold text-cream">
-            <span class="lang-en">Reserve Your Table</span>
-            <span class="lang-zh">预订您的雅座</span>
-          </h3>
-          <p class="font-sans text-xs text-sage-gray">
-            <span class="lang-en">For parties larger than 8, please contact us directly via telephone. Walking-in tables are always welcome!</span>
-            <span class="lang-zh">若您的用餐人数多于8人，请直接拨打电话联系我们。面馆始终为无预约顾客预留部分桌椅，欢迎随时光临！</span>
-          </p>
-        </div>
-
-        <!-- Interactive HTML Form -->
-        <form id="booking-form" class="space-y-6 font-sans text-sm">
-          
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div class="flex flex-col space-y-2">
-              <label for="book-name" class="text-xs font-semibold uppercase tracking-wider text-gold">
-                <span class="lang-en">Full Name *</span>
-                <span class="lang-zh">您的尊姓大名 *</span>
-              </label>
-              <input type="text" id="book-name" required placeholder="John Doe" class="input-field">
-            </div>
-            <div class="flex flex-col space-y-2">
-              <label for="book-phone" class="text-xs font-semibold uppercase tracking-wider text-gold">
-                <span class="lang-en">Phone Number *</span>
-                <span class="lang-zh">联系电话 *</span>
-              </label>
-              <input type="tel" id="book-phone" required placeholder="(416) 555-0199" class="input-field">
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div class="flex flex-col space-y-2">
-              <label for="book-guests" class="text-xs font-semibold uppercase tracking-wider text-gold">
-                <span class="lang-en">Guests *</span>
-                <span class="lang-zh">用餐人数 *</span>
-              </label>
-              <select id="book-guests" required class="input-field select-field">
-                <option value="1">1 Guest / 1位</option>
-                <option value="2" selected>2 Guests / 2位</option>
-                <option value="3">3 Guests / 3位</option>
-                <option value="4">4 Guests / 4位</option>
-                <option value="5">5 Guests / 5位</option>
-                <option value="6">6 Guests / 6位</option>
-                <option value="7">7 Guests / 7位</option>
-                <option value="8">8 Guests / 8位</option>
-              </select>
-            </div>
-            <div class="flex flex-col space-y-2">
-              <label for="book-date" class="text-xs font-semibold uppercase tracking-wider text-gold">
-                <span class="lang-en">Date *</span>
-                <span class="lang-zh">预订日期 *</span>
-              </label>
-              <input type="date" id="book-date" required class="input-field">
-            </div>
-            <div class="flex flex-col space-y-2">
-              <label for="book-time" class="text-xs font-semibold uppercase tracking-wider text-gold">
-                <span class="lang-en">Time *</span>
-                <span class="lang-zh">预订时间 *</span>
-              </label>
-              <select id="book-time" required class="input-field select-field">
-                <option value="11:30 AM">11:30 AM</option>
-                <option value="12:00 PM">12:00 PM</option>
-                <option value="12:30 PM">12:30 PM</option>
-                <option value="1:00 PM">1:00 PM</option>
-                <option value="1:30 PM">1:30 PM</option>
-                <option value="5:00 PM">5:00 PM</option>
-                <option value="5:30 PM">5:30 PM</option>
-                <option value="6:00 PM">6:00 PM</option>
-                <option value="6:30 PM" selected>6:30 PM</option>
-                <option value="7:00 PM">7:00 PM</option>
-                <option value="7:30 PM">7:30 PM</option>
-                <option value="8:00 PM">8:00 PM</option>
-                <option value="8:30 PM">8:30 PM</option>
-                <option value="9:00 PM">9:00 PM</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="flex flex-col space-y-2">
-            <label for="book-notes" class="text-xs font-semibold uppercase tracking-wider text-gold">
-              <span class="lang-en">Special Requests / Allergies</span>
-              <span class="lang-zh">特殊要求 / 备注或过敏源</span>
-            </label>
-            <textarea id="book-notes" rows="3" placeholder="e.g. Vegetarian, baby high-chair, non-spicy broth, food allergies..." class="input-field resize-none"></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-gold w-full py-4 text-base font-semibold tracking-widest uppercase">
-            <span class="lang-en">Confirm Reservation</span>
-            <span class="lang-zh">确认预约座席</span>
-          </button>
-
-        </form>
-
-        <!-- Custom HTML success popup drawer -->
-        <div id="booking-success" class="absolute inset-0 bg-dark-jade bg-opacity-98 flex flex-col justify-center items-center p-8 text-center translate-y-full opacity-0 transition-all duration-500 z-30">
-          <span class="w-16 h-16 rounded-full bg-sage-green-20 text-gold flex items-center justify-center border border-gold-30 text-2xl mb-6 scale-90">
-            <i class="fa-solid fa-calendar-check"></i>
+      <!-- Contact details -->
+      <div class="text-center space-y-4">
+        <div class="flex items-center justify-center space-x-2 text-gold">
+          <i class="fa-solid fa-map-pin text-sm"></i>
+          <span class="font-sans font-semibold text-xs uppercase tracking-widest">
+            <span class="lang-en">Find Us</span>
+            <span class="lang-zh">面馆位置</span>
           </span>
-          <h4 class="font-serif text-2xl font-bold text-cream mb-3">
-            <span class="lang-en">Reservation Confirmed!</span>
-            <span class="lang-zh">预订提交成功！</span>
-          </h4>
-          <p class="font-sans text-sm text-sage-gray leading-relaxed max-w-sm mb-8">
-            <span class="lang-en">Thank you for booking at Rolled and Ready. A confirmation text was sent to your phone. We look forward to serving you!</span>
-            <span class="lang-zh">感谢您预订一碗手擀面。预订确认短信已发送至您的联系手机。我们期待为您呈现地道美味！</span>
-          </p>
-          <button id="btn-reset-booking" class="btn btn-gold text-xs px-6 py-2">
-            <span class="lang-en">Done / Book Another</span>
-            <span class="lang-zh">完成 / 预订其他时段</span>
-          </button>
         </div>
-
+        <h3 class="font-serif text-2xl sm:text-3xl font-bold text-cream">
+          <span class="lang-en">Visit Rolled & Ready</span>
+          <span class="lang-zh">莅临一碗手擀面</span>
+        </h3>
+        <p class="font-sans text-sm text-sage-gray leading-relaxed max-w-xl mx-auto">
+          <span class="lang-en">Nestled in the heart of Scarborough, our warm dining room welcomes families, foodies, and noodle lovers alike. Come taste the tradition today.</span>
+          <span class="lang-zh">坐落于多伦多士嘉堡中心地带，我们温馨典雅的餐厅时刻敞开大门，欢迎所有食客、家庭和手工面爱好者前来寻味地道中式温暖。</span>
+        </p>
       </div>
 
-      <!-- Contact Details & Map Mockup Info -->
-      <div id="contact" class="lg:col-span-5 flex flex-col justify-between space-y-8 reveal">
-        
-        <div class="space-y-4">
-          <div class="flex items-center space-x-2 text-gold">
-            <i class="fa-solid fa-map-pin text-sm"></i>
-            <span class="font-sans font-semibold text-xs uppercase tracking-widest">
-              <span class="lang-en">Find Us</span>
-              <span class="lang-zh">面馆位置</span>
-            </span>
-          </div>
-          <h3 class="font-serif text-2xl sm:text-3xl font-bold text-cream">
-            <span class="lang-en">Visit Rolled & Ready</span>
-            <span class="lang-zh">莅临一碗手擀面</span>
-          </h3>
-          <p class="font-sans text-sm text-sage-gray leading-relaxed">
-            <span class="lang-en">Nestled in the heart of Scarborough, our warm dining room welcomes families, foodies, and noodle lovers alike. Come taste the tradition today.</span>
-            <span class="lang-zh">坐落于多伦多士嘉堡中心地带，我们温馨典雅的餐厅时刻敞开大门，欢迎所有食客、家庭和手工面爱好者前来寻味地道中式温暖。</span>
-          </p>
+      <!-- Address / Phone / Email grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center font-sans text-sm text-cream pt-4 border-t border-gold-10">
+        <div class="flex flex-col items-center space-y-2">
+          <span class="text-gold text-lg"><i class="fa-solid fa-location-dot"></i></span>
+          <span class="font-medium text-xs uppercase tracking-wider text-gold">
+            <span class="lang-en">Address</span>
+            <span class="lang-zh">面馆地址</span>
+          </span>
+          <span>3101 Kennedy Road, Scarborough, ON M1V 5P4</span>
         </div>
-
-        <div class="space-y-4 font-sans text-sm text-cream">
-          <div class="flex items-center space-x-4">
-            <span class="text-gold text-base w-8 text-center"><i class="fa-solid fa-location-dot"></i></span>
-            <span>3101 Kennedy Road, Scarborough, ON M1V 5P4</span>
-          </div>
-          <a href="tel:+14165550199" class="flex items-center space-x-4 hover:text-gold transition-colors duration-300">
-            <span class="text-gold text-base w-8 text-center"><i class="fa-solid fa-phone"></i></span>
+        <div class="flex flex-col items-center space-y-2">
+          <a href="tel:+14165550199" class="flex flex-col items-center space-y-2 hover:text-gold transition-colors duration-300">
+            <span class="text-gold text-lg"><i class="fa-solid fa-phone"></i></span>
+            <span class="font-medium text-xs uppercase tracking-wider text-gold">
+              <span class="lang-en">Phone</span>
+              <span class="lang-zh">联系电话</span>
+            </span>
             <span>+1 (416) 555-0199</span>
           </a>
-          <a href="mailto:hello@rolledandready.com" class="flex items-center space-x-4 hover:text-gold transition-colors duration-300">
-            <span class="text-gold text-base w-8 text-center"><i class="fa-solid fa-envelope"></i></span>
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+          <a href="mailto:hello@rolledandready.com" class="flex flex-col items-center space-y-2 hover:text-gold transition-colors duration-300">
+            <span class="text-gold text-lg"><i class="fa-solid fa-envelope"></i></span>
+            <span class="font-medium text-xs uppercase tracking-wider text-gold">
+              <span class="lang-en">Email</span>
+              <span class="lang-zh">电子邮箱</span>
+            </span>
             <span>hello@rolledandready.com</span>
           </a>
         </div>
+      </div>
 
-        <!-- stylized premium CSS map illustration -->
-        <div class="map-mockup rounded-lg overflow-hidden border border-gold-20 shadow-lg relative h-48 bg-dark-jade bg-opacity-50">
-          <div class="absolute inset-0 z-0 bg-map opacity-35"></div>
-          <div class="absolute inset-0 z-10 bg-gradient-to-t from-dark-jade via-transparent to-transparent"></div>
-          
-          <!-- Map indicator tag -->
-          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center">
-            <span class="w-10 h-10 bg-gold text-dark-jade rounded-full shadow-lg border border-cream flex items-center justify-center text-base animate-pulse">
-              <i class="fa-solid fa-bowl-food"></i>
-            </span>
-            <span class="mt-2 bg-dark-jade bg-opacity-90 px-3 py-1 rounded border border-gold text-xs font-semibold text-cream tracking-wide text-center">
-              <span class="lang-en">Rolled & Ready</span>
-              <span class="lang-zh">一碗手擀面</span>
-            </span>
-          </div>
+      <!-- stylized premium CSS map illustration -->
+      <div class="map-mockup rounded-lg overflow-hidden border border-gold-20 shadow-lg relative h-48 bg-dark-jade bg-opacity-50">
+        <div class="absolute inset-0 z-0 bg-map opacity-35"></div>
+        <div class="absolute inset-0 z-10 bg-gradient-to-t from-dark-jade via-transparent to-transparent"></div>
+        
+        <!-- Map indicator tag -->
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center">
+          <span class="w-10 h-10 bg-gold text-dark-jade rounded-full shadow-lg border border-cream flex items-center justify-center text-base animate-pulse">
+            <i class="fa-solid fa-bowl-food"></i>
+          </span>
+          <span class="mt-2 bg-dark-jade bg-opacity-90 px-3 py-1 rounded border border-gold text-xs font-semibold text-cream tracking-wide text-center">
+            <span class="lang-en">Rolled & Ready</span>
+            <span class="lang-zh">一碗手擀面</span>
+          </span>
         </div>
-
       </div>
 
     </div>
@@ -1134,8 +996,8 @@
           <li><a href="#menu" class="hover:text-gold transition-colors duration-300">
             <span class="lang-en">Menu</span><span class="lang-zh">经典菜单</span>
           </a></li>
-          <li><a href="#reservation" class="hover:text-gold transition-colors duration-300">
-            <span class="lang-en">Reservations</span><span class="lang-zh">客座预订</span>
+          <li><a href="#contact" class="hover:text-gold transition-colors duration-300">
+            <span class="lang-en">Connect</span><span class="lang-zh">联系我们</span>
           </a></li>
         </ul>
       </div>
