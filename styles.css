@@ -4,22 +4,22 @@
 
 /* 1. Core Reset & Variable System */
 :root {
-  /* Color Palette - Premium Jade & Imperial Gold Theme */
-  --color-dark-jade: #0A1C15;         /* Primary Deep Background */
-  --color-dark-jade-98: #040D0A;      /* Deepest Footer Background */
-  --color-dark-jade-95: #071510;      /* Secondary Dark Section Background */
-  --color-dark-jade-90: rgba(10, 28, 21, 0.9);
-  --color-sage-green: #12241D;        /* Card & Button Base Background */
-  --color-sage-green-20: rgba(18, 36, 29, 0.6);
-  --color-gold: #D6B56E;              /* Primary Accent (Imperial Gold) */
-  --color-gold-30: rgba(214, 181, 110, 0.3);
-  --color-gold-20: rgba(214, 181, 110, 0.2);
-  --color-gold-10: rgba(214, 181, 110, 0.1);
-  --color-gold-5: rgba(214, 181, 110, 0.05);
-  --color-cream: #F4F0E6;             /* Core Typography (Warm Rice Cream) */
-  --color-sage-gray: #8AA299;         /* Subtext & Secondary Body text */
-  --color-red: #C84B31;               /* Chili Spice & Highlight Red */
-  --color-red-10: rgba(200, 75, 49, 0.1);
+  /* Color Palette - Premium Light & Clean Sage Theme */
+  --color-dark-jade: #FAF9F6;         /* Primary Light Background */
+  --color-dark-jade-98: #ECEAE2;      /* Deepest Footer Background */
+  --color-dark-jade-95: #F4F2EB;      /* Secondary Light Section Background */
+  --color-dark-jade-90: rgba(250, 249, 246, 0.95); /* Header Semi-Transparent Background */
+  --color-sage-green: #FFFFFF;        /* Card & Button Base Background */
+  --color-sage-green-20: rgba(172, 133, 63, 0.06); /* Accent Soft Wash */
+  --color-gold: #AC853F;              /* Primary Accent (Contrast-Safe Bronze Gold) */
+  --color-gold-30: rgba(172, 133, 63, 0.3);
+  --color-gold-20: rgba(172, 133, 63, 0.2);
+  --color-gold-10: rgba(172, 133, 63, 0.1);
+  --color-gold-5: rgba(172, 133, 63, 0.05);
+  --color-cream: #1C2E24;             /* Core Typography (Deep Charcoal Jade) */
+  --color-sage-gray: #5C6E65;         /* Subtext & Secondary Body text (Muted Sage) */
+  --color-red: #B83A20;               /* Chili Spice & Highlight Red */
+  --color-red-10: rgba(184, 58, 32, 0.08);
   
   /* Fonts */
   --font-en-serif: 'Playfair Display', Georgia, serif;
@@ -27,8 +27,8 @@
   --font-zh-serif: 'Noto Serif SC', 'PingFang SC', serif;
   
   /* Shadows & Radius */
-  --shadow-gold-glow: 0 0 20px rgba(214, 181, 110, 0.15);
-  --shadow-card: 0 10px 30px rgba(4, 13, 10, 0.5);
+  --shadow-gold-glow: 0 0 15px rgba(172, 133, 63, 0.1);
+  --shadow-card: 0 4px 20px rgba(28, 46, 36, 0.04);
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 16px;
@@ -277,27 +277,27 @@ html[lang="zh"] .font-sans {
 .bg-dark-jade-95 { background-color: var(--color-dark-jade-95); }
 .bg-dark-jade-98 { background-color: var(--color-dark-jade-98); }
 .bg-dark-jade-bg { background-color: var(--color-dark-jade); }
-.bg-opacity-98 { background-color: rgba(4, 13, 10, 0.98); }
-.bg-opacity-20 { background-color: rgba(10, 28, 21, 0.20); }
-.bg-opacity-10 { background-color: rgba(10, 28, 21, 0.10); }
-.bg-opacity-40 { background-color: rgba(10, 28, 21, 0.40); }
-.bg-opacity-50 { background-color: rgba(10, 28, 21, 0.50); }
-.bg-opacity-75 { background-color: rgba(10, 28, 21, 0.75); }
-.bg-gradient-to-r { background-image: linear-gradient(to right, var(--color-dark-jade) 20%, rgba(10, 28, 21, 0.9) 60%, transparent 100%); }
+.bg-opacity-98 { background-color: rgba(250, 249, 246, 0.98); }
+.bg-opacity-20 { background-color: rgba(250, 249, 246, 0.20); }
+.bg-opacity-10 { background-color: rgba(250, 249, 246, 0.10); }
+.bg-opacity-40 { background-color: rgba(250, 249, 246, 0.40); }
+.bg-opacity-50 { background-color: rgba(250, 249, 246, 0.50); }
+.bg-opacity-75 { background-color: rgba(250, 249, 246, 0.75); }
+.bg-gradient-to-r { background-image: linear-gradient(to right, var(--color-dark-jade) 20%, rgba(250, 249, 246, 0.95) 60%, transparent 100%); }
 .bg-gradient-to-t { background-image: linear-gradient(to top, var(--color-dark-jade) 0%, transparent 100%); }
-.border { border: 1px solid rgba(214, 181, 110, 0.15); }
-.border-t { border-top: 1px solid rgba(214, 181, 110, 0.15); }
-.border-y { border-top: 1px solid rgba(214, 181, 110, 0.15); border-bottom: 1px solid rgba(214, 181, 110, 0.15); }
+.border { border: 1px solid rgba(172, 133, 63, 0.15); }
+.border-t { border-top: 1px solid rgba(172, 133, 63, 0.15); }
+.border-y { border-top: 1px solid rgba(172, 133, 63, 0.15); border-bottom: 1px solid rgba(172, 133, 63, 0.15); }
 .border-gold-30 { border-color: var(--color-gold-30); }
 .border-gold-20 { border-color: var(--color-gold-20); }
 .border-gold-10 { border-color: var(--color-gold-10); }
 .border-gold-5 { border-color: var(--color-gold-5); }
 .shadow-2xl { box-shadow: var(--shadow-card); }
 .rounded-lg { border-radius: var(--radius-md); }
-
+ 
 /* Sticky Header styling */
 header {
-  background-color: rgba(10, 28, 21, 0.98); /* Highly opaque background to prevent visual clashing with background text */
+  background-color: rgba(250, 249, 246, 0.96); /* Highly opaque background to prevent visual clashing with background text */
   border-bottom: 1px solid var(--color-gold-10);
   backdrop-filter: blur(15px);
   padding-top: 1.15rem;
@@ -305,9 +305,9 @@ header {
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 header.scrolled {
-  background-color: #071510;                 /* Darker solid green when scrolled */
+  background-color: #F4F2EB;                 /* Light secondary cream background when scrolled */
   border-bottom: 1px solid var(--color-gold-30);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 20px rgba(28, 46, 36, 0.05);
   padding-top: 0.65rem;
   padding-bottom: 0.65rem;
 }
@@ -390,7 +390,7 @@ header.scrolled {
 .btn-outline {
   background-color: transparent;
   color: var(--color-cream);
-  border: 1px solid rgba(244, 240, 230, 0.3);
+  border: 1px solid rgba(28, 46, 36, 0.2);
   padding: 0.65rem 1.5rem;
 }
 .btn-outline:hover {
@@ -407,7 +407,7 @@ header.scrolled {
 
 /* Hero Section Custom Details */
 .filter.brightness-85 {
-  filter: brightness(0.4) contrast(1.1); /* Darker backdrop to pop text beautifully */
+  filter: none; /* Removed heavy dark overlay for simple/light design */
 }
 .scale-102 {
   transform: scale(1.03);
@@ -465,7 +465,7 @@ header.scrolled {
 .menu-card:hover {
   transform: translateY(-5px);
   border-color: var(--color-gold);
-  box-shadow: 0 15px 35px rgba(4, 13, 10, 0.7), var(--shadow-gold-glow);
+  box-shadow: 0 10px 25px rgba(28, 46, 36, 0.08), var(--shadow-gold-glow);
 }
 
 .menu-header {
@@ -534,8 +534,8 @@ header.scrolled {
 
 .input-field {
   width: 100%;
-  background-color: rgba(4, 13, 10, 0.4);
-  border: 1px solid rgba(214, 181, 110, 0.2);
+  background-color: #FFFFFF;
+  border: 1px solid rgba(172, 133, 63, 0.2);
   color: var(--color-cream);
   padding: 0.85rem 1rem;
   border-radius: var(--radius-sm);
@@ -546,8 +546,8 @@ header.scrolled {
 }
 .input-field:focus {
   border-color: var(--color-gold);
-  background-color: rgba(4, 13, 10, 0.7);
-  box-shadow: 0 0 10px rgba(214, 181, 110, 0.1);
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(172, 133, 63, 0.15);
 }
 
 /* select field dropdown arrows */
@@ -566,12 +566,12 @@ header.scrolled {
 }
 
 .bg-map {
-  background-color: #0A1C15;
+  background-color: var(--color-dark-jade-95);
   background-image: 
-    radial-gradient(circle at 20% 30%, rgba(214, 181, 110, 0.08) 1px, transparent 1px),
-    radial-gradient(circle at 75% 40%, rgba(214, 181, 110, 0.08) 1px, transparent 1px),
-    linear-gradient(rgba(214, 181, 110, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(214, 181, 110, 0.04) 1px, transparent 1px);
+    radial-gradient(circle at 20% 30%, rgba(172, 133, 63, 0.08) 1px, transparent 1px),
+    radial-gradient(circle at 75% 40%, rgba(172, 133, 63, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(172, 133, 63, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(172, 133, 63, 0.04) 1px, transparent 1px);
   background-size: 20px 20px, 40px 40px, 10px 10px, 10px 10px;
 }
 

@@ -88,17 +88,11 @@
   </div>
 
   <!-- Hero Section -->
-  <section id="hero" class="relative min-h-screen flex items-center pt-24 overflow-hidden">
-    <div class="absolute inset-0 z-0">
-      <!-- High-Quality Hero Background with Jade overlay -->
-      <div class="absolute inset-0 bg-gradient-to-r from-dark-jade via-dark-jade-90 to-transparent z-10"></div>
-      <img src="assets/hero_noodle.png" alt="Steaming bowl of hand-rolled beef noodles" class="w-full h-full object-cover object-center scale-102 filter brightness-85">
-    </div>
-
-    <div class="relative z-20 max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+  <section id="hero" class="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden bg-dark-jade">
+    <div class="relative z-20 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       
-      <!-- Hero Text Content -->
-      <div class="hero-text-content space-y-6 animate-fade-in-up">
+      <!-- Hero Text Content (Left Column) -->
+      <div class="hero-text-content lg:col-span-7 space-y-6 animate-fade-in-up">
         
         <!-- Classic Crest / Subtitle -->
         <div class="flex items-center space-x-3 text-gold">
@@ -147,9 +141,16 @@
 
       </div>
 
+      <!-- Hero Image Container (Right Column) -->
+      <div class="lg:col-span-5 relative group rounded-lg overflow-hidden border border-gold-20 shadow-2xl reveal animate-fade-in-up duration-700">
+        <img src="assets/hero_noodle.png" alt="Steaming bowl of hand-rolled beef noodles" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-103">
+        <!-- Gold Trim Border (Classic detail) -->
+        <div class="absolute inset-4 border border-gold-30 z-20 pointer-events-none"></div>
+      </div>
+
     </div>
 
-    <!-- Smooth Bottom Wave/Scroll Indicator -->
+    <!-- Smooth Bottom Scroll Indicator -->
     <a href="#craft" class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-cream z-20 animate-bounce duration-1000 hidden md:block" aria-label="Scroll to story">
       <i class="fa-solid fa-chevron-down text-lg text-gold"></i>
     </a>
